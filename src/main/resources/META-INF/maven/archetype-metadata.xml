@@ -9,14 +9,14 @@
 			<directory>src/main</directory>
 
 			<excludes>
-				<exclude name="**/*.jsp"></exclude>
+				<exclude>**/*.jsp</exclude>
 			</excludes>
 		</fileSet>
-		<fileSet filtered="true" packaged="false" encoding="utf-8">
+		<fileSet filtered="false" packaged="false" encoding="utf-8">
 			<directory>src/main</directory>
 
 			<includes>
-				<include name="**/*.jsp"></include>
+				<include>**/*.jsp</include>
 			</includes>
 		</fileSet>
 	</fileSets>
