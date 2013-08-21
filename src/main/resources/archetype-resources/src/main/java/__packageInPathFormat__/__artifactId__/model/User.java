@@ -11,7 +11,7 @@ public class User  {
 
 	private static final long serialVersionUID = 1L;
 	
-	@Id	@Column(nullable=false, unique=true, length=50)
+	@Id	@Column(nullable=false, length=50)
 	private String username;
 	@Column(nullable=false, length=50)
 	private String password;
