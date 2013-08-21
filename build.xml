@@ -1,0 +1,47 @@
+<project name="try-archetype" basedir="." default="all">
+
+	<property file="build.properties"/>
+	<property file="build.local.properties"/>
+	
+	<property name="newProjectOutputDir" value="../${newProjectArtifactId}"/>
+	
+	<target name="install">
+		<exec executable="cmd" failonerror="true" failifexecutionfails="true">
+    		<arg value="/c"/>
+    		<arg value="mvn"/>
+    		<arg value="install"/>
+    	</exec>
+	</target>
+
+	<target name="delete">
+		<delete dir="${newProjectOutputDir}"/>
+	</target>
+
+	<target name="generate" depends="install,delete">
+		<exec executable="cmd" dir=".." failonerror="true" failifexecutionfails="true">
+			<arg value="/c"/>
+			<arg value="mvn"/>
+			<arg value="archetype:generate"/>
+			<arg value="-DarchetypeGroupId=com.highwise"/>
+			<arg value="-DarchetypeVersion=1.0-SNAPSHOT"/>
+			<arg value="-DarchetypeArtifactId=weby"/>
+			<arg value="-DgroupId=${newProjectGroupId}"/>
+			<arg value="-DartifactId=${newProjectArtifactId}"/>
+			<arg value="-DarchetypeRepository=${localRepository}"/>
+			<arg value="-Dinteractive=false"/>
+
+		</exec>
+	</target>
+	
+	<target name="run" depends="generate" >
+		<exec executable="cmd" dir="${newProjectOutputDir}" failonerror="true" failifexecutionfails="true">
+			<arg value="/c"/>
+			<arg value="mvn"/>
+			<arg value="tomcat:run"/>
+		</exec>
+	</target>
+	
+	<target name="all" depends="run"/>
+	
+		
+</project>

@@ -1,0 +1,1 @@
+mvn archetype:generate -DarchetypeGroupId=com.highwise -DarchetypeVersion=0.1 -DarchetypeArtifactId=weby -DgroupId=com.yourcompany -DartifactId=newProject -Dversion=1.0-SNAPSHOT -DinteractiveMode=false
