@@ -11,13 +11,13 @@
 
 	<groupId>com.highwise</groupId>
 	<artifactId>weby</artifactId>
-	<version>0.1</version>
+	<version>0.2</version>
 
 	<name>Weby</name>
 	<description>
 		A simple spring mvc + hibernate project archetype
 	</description>
-	<url>http://code.google.com/p/weby/</url>
+	<url>https://github.com/risoft/weby</url>
 
 	<licenses>
 		<license>
@@ -30,9 +30,9 @@
 	</licenses>
 
 	<scm>
-		<url>https://weby.googlecode.com/svn/trunk</url>
-		<connection>scm:svn:http://weby.googlecode.com/svn/trunk/</connection>
-		<developerConnection>scm:svn:https://weby.googlecode.com/svn/trunk/</developerConnection>
+		<url>https://github.com/risoft/weby.git</url>
+		<connection>scm:git:https://github.com/risoft/weby.git</connection>
+		<developerConnection>scm:git:https://github.com/risoft/weby.git</developerConnection>
 	</scm>
 
 	<build>
