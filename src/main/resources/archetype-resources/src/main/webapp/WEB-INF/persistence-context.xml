@@ -18,13 +18,13 @@
        ">
 
 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-		<property name="location" value="classpath:/jdbc.properties"/>
+		<property name="location" value="classpath:/mysqldb.properties"/>
 	</bean>
 
 	<bean id="dataSource"
 		class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
-		<property name="driverClassName" value="org.hsqldb.jdbcDriver" />
+		<property name="driverClassName" value="${jdbc.driverClassName}" />
 		<property name="url"
 			value="${jdbc.connectionUrl}" />
 		<property name="username" value="${jdbc.username}" />
@@ -41,7 +41,7 @@
 		<property name="hibernateProperties">
 			<props>
 				<prop key="hibernate.dialect">
-					org.hibernate.dialect.HSQLDialect
+					${jdbc.hibernateDialect}
 				</prop>
 				<prop key="hibernate.show_sql">true</prop>
 				<prop key="hibernate.hbm2ddl.auto">create</prop>
@@ -56,8 +56,8 @@
 	</bean>
 
 	<aop:config>
-		<aop:pointcut id="webMethods" expression="execution(* ${groupId}.web.*.*(..))" />
-		<aop:pointcut id="serivceMethods" expression="execution(* ${groupId}.service.*.*(..))" />
+		<aop:pointcut id="webMethods" expression="execution(* ${groupId}.${artifactId}.web.*.*(..))" />
+		<aop:pointcut id="serivceMethods" expression="execution(* ${groupId}.${artifactId}.service.*.*(..))" />
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="webMethods" />
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="serivceMethods" />	
 	</aop:config>

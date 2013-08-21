@@ -1,4 +1,4 @@
-package ${groupId}.web;
+package ${groupId}.${artifactId}.web;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import ${groupId}.model.Person;
+import ${groupId}.${artifactId}.model.Person;
 
 @Controller
 public class PersonController {

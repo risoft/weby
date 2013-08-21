@@ -1,4 +1,4 @@
-package ${groupId}.model;
+package ${groupId}.${artifactId}.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -29,6 +29,7 @@ public class Person {
 	}
 	public void setAge(int age) {
 		this.age = age;
+
 	}
 	
 	
