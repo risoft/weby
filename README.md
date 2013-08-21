@@ -4,9 +4,9 @@ The 5 minutes promise: 5 minutes and you can start coding.
 
 No downloads, no configuration, no settings, no boilerplate. Enjoy!
 
-==For the impatient==
+**For the impatient**
 
-===1 Create archetype===
+***1 Create archetype***
 
 Execute:
 
