@@ -14,7 +14,7 @@ Execute:
 
 Maven will create a directory called yourprojectname.
 
-===2 See it working===
+***2 See it working***
 
 Execute:
 `mvn tomcat:run`
@@ -22,7 +22,7 @@ Execute:
 Open in your browser:
 `http://localhost:8080/yourprojectname
 
-===3 Start coding===
+***3 Start coding***
 Execute:
 `mvn eclipse:eclipse -Dwtpversion=1.5`
 
