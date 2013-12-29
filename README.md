@@ -12,7 +12,7 @@ Execute:
 
 `mvn archetype:generate -DarchetypeGroupId=com.highwise -DarchetypeVersion=0.1 `
 `-DarchetypeArtifactId=weby -DgroupId=com.yourcompany -DartifactId=yourprojectname `
-`-Dversion=1.0-SNAPSHOT -DinteractiveMode=false``
+`-Dversion=1.0-SNAPSHOT -DinteractiveMode=false`
 
 Maven will create a directory called yourprojectname.
 
