@@ -23,7 +23,7 @@
 			<arg value="mvn"/>
 			<arg value="archetype:generate"/>
 			<arg value="-DarchetypeGroupId=com.highwise"/>
-			<arg value="-DarchetypeVersion=1.0-SNAPSHOT"/>
+			<arg value="-DarchetypeVersion=0.21-SNAPSHOT"/>
 			<arg value="-DarchetypeArtifactId=weby"/>
 			<arg value="-DgroupId=${newProjectGroupId}"/>
 			<arg value="-DartifactId=${newProjectArtifactId}"/>
