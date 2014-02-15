@@ -4,6 +4,14 @@
 
 ***Fixes and new releases usually within 48 hours. (Feb 16 2014)***
 
+-------------------------------------------------
+
+***Out of the box Oracle Support (Feb 9 2014)***
+ 
+Read More: https://github.com/risoft/weby/wiki/Oracle-Support
+
+----------------------------------------
+
 Create a skeleton for your maven + spring-mvc + hibernate web project.
 
 *The 5 minutes promise*: 5 minutes and you can start coding.
