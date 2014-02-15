@@ -10,7 +10,7 @@ No downloads, no configuration, no settings, no boilerplate. Enjoy!
 
 Execute:
 
-`mvn archetype:generate -DarchetypeGroupId=com.highwise -DarchetypeVersion=0.1 `
+`mvn archetype:generate -DarchetypeGroupId=com.highwise`
 `-DarchetypeArtifactId=weby -DgroupId=com.yourcompany -DartifactId=yourprojectname `
 `-Dversion=1.0-SNAPSHOT -DinteractiveMode=false`
 
