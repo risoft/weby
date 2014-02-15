@@ -42,5 +42,5 @@ In Eclipse, do: File &#8594;Import &#8594; Existing Project into Workspace.
 
 Browse to the location of the yourprojectname directory and import it. 
 
-**Start programming**
+**Start programming!**
 
