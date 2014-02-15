@@ -10,9 +10,7 @@ No downloads, no configuration, no settings, no boilerplate. Enjoy!
 
 Execute:
 
-`mvn archetype:generate -DarchetypeGroupId=com.highwise -DarchetypeVersion=0.1 `
-`-DarchetypeArtifactId=weby -DgroupId=com.yourcompany -DartifactId=yourprojectname `
-`-Dversion=1.0-SNAPSHOT -DinteractiveMode=false`
+`mvn archetype:generate -DarchetypeGroupId=com.highwise -DarchetypeArtifactId=weby -DinteractiveMode=false -Dversion=1.0-SNAPSHOT -DgroupId=com.yourcompany -DartifactId=yourprojectname`
 
 Maven will create a directory called yourprojectname.
 
