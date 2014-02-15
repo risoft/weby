@@ -6,9 +6,9 @@
 
 -------------------------------------------------
 
-***Out of the box Oracle Support (Feb 9 2014)***
+***Out of the box Oracle support***
  
-Read More: https://github.com/risoft/weby/wiki/Oracle-Support
+Read More: https://github.com/risoft/weby/wiki/Oracle-Support ***(Feb 9 2014)***
 
 ----------------------------------------
 
