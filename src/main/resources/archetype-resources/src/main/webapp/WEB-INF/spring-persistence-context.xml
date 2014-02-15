@@ -18,7 +18,7 @@
        ">
 
 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-		<property name="location" value="classpath:/mysqldb.properties"/>
+		<property name="location" value="classpath:/hsqldb.properties"/>
 	</bean>
 
 	<bean id="dataSource"
